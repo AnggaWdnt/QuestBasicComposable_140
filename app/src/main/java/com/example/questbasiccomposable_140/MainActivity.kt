@@ -59,6 +59,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
                 .padding(top = 16.dp)
         )
         Text(text = "Nama", style = TextStyle(fontSize = 20.sp))
+        Text(text = "Angga Widianto", style = TextStyle(fontSize = 15.sp))
     }
 }
 

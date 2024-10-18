@@ -44,7 +44,7 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Column (
+    Column(
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Top,
         modifier = modifier.fillMaxSize()
@@ -66,15 +66,15 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
             style = TextStyle(fontSize = 15.sp, color = Color.Red)
         )
         Text(text = "20220140140", style = TextStyle(fontSize = 30.sp))
+        Image(
+            painter = painterResource(id = R.drawable.angga),
+            contentDescription = "Logo",
+            modifier = Modifier
+                .size(200.dp)
+                .clip(CircleShape)
+                .padding(top = 16.dp)
+        )
     }
-    Image(
-        painter = painterResource(id = R.drawable.angga),
-        contentDescription = "Logo",
-        modifier = Modifier
-            .size(200.dp)
-            .clip(CircleShape)
-            .padding(top = 16.dp)
-    )
 }
 @Preview(showBackground = true)
 @Composable

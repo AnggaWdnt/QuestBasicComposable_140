@@ -65,6 +65,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
             text = "Angga Widianto",
             style = TextStyle(fontSize = 15.sp, color = Color.Red)
         )
+        Text(text = "20220140140", style = TextStyle(fontSize = 20.sp))
     }
 }
 @Preview(showBackground = true)

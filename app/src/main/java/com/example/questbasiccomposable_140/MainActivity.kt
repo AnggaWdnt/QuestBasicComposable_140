@@ -49,6 +49,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
         modifier = modifier.fillMaxSize()
     ) {
         Text(text = "Login", style = TextStyle(fontSize = 30.sp))
+        Text(text = "ini adalah halaman login")
     }
 }
 

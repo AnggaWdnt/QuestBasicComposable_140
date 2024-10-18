@@ -67,6 +67,14 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
         )
         Text(text = "20220140140", style = TextStyle(fontSize = 30.sp))
     }
+    Image(
+        painter = painterResource(id = R.drawable.angga),
+        contentDescription = "Logo",
+        modifier = Modifier
+            .size(200.dp)
+            .clip(CircleShape)
+            .padding(top = 16.dp)
+    )
 }
 @Preview(showBackground = true)
 @Composable

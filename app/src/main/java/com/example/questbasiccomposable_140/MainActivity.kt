@@ -58,6 +58,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
                 .clip(CircleShape)
                 .padding(top = 16.dp)
         )
+        Text(text = "Nama", style = TextStyle(fontSize = 20.sp))
     }
 }
 

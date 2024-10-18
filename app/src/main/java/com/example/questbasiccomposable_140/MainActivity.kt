@@ -7,6 +7,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
@@ -68,11 +69,11 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
         Text(text = "20220140140", style = TextStyle(fontSize = 30.sp))
         Image(
             painter = painterResource(id = R.drawable.angga),
-            contentDescription = "Logo",
+            contentDescription = "Foto Angga",
             modifier = Modifier
-                .size(200.dp)
-                .clip(CircleShape)
                 .padding(top = 16.dp)
+                .aspectRatio(16f / 9f)
+                .fillMaxSize()
         )
     }
 }

@@ -17,6 +17,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.tooling.preview.Preview
@@ -59,10 +60,13 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
                 .padding(top = 16.dp)
         )
         Text(text = "Nama", style = TextStyle(fontSize = 20.sp))
-        Text(text = "Angga Widianto", style = TextStyle(fontSize = 15.sp))
+        // Mengubah teks "Angga Widianto" menjadi warna merah
+        Text(
+            text = "Angga Widianto",
+            style = TextStyle(fontSize = 15.sp, color = Color.Red)
+        )
     }
 }
-
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
